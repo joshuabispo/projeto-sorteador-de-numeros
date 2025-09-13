@@ -199,7 +199,7 @@ footer {
 
   .button-clear-result,
   .button-refresh {
-    display: flex;              /* ativa flexbox */
+    display: none;
     justify-content: center;    /* centraliza horizontal */
     align-items: center;        /* centraliza vertical */
     text-align: center;         /* centraliza o texto */
@@ -278,7 +278,7 @@ footer {
     max-width: 160px;
     font-size: 0.85rem;
     padding: 10px 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center; /* centraliza o texto */
     text-align: center;
