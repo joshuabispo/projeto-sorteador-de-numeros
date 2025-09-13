@@ -1,0 +1,152 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bree Serif", serif;
+}
+
+body {
+  background: #f2f2f2;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Logo + título */
+nav {
+  display: flex;
+  flex-direction: column; /* um embaixo do outro */
+  align-items: center;
+  margin-top: 30px;
+}
+
+.image-logo {
+  width: 407px;         /* tamanho da imagem */
+  margin-bottom: 12px;  /* espaço entre imagem e h1 */
+}
+
+.name-logo {
+  font-size: 2.2rem;
+  color: #2c3e50;
+}
+
+/* Caixa do sorteador */
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.box-sortition {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.box-sortition h4 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Inputs */
+.number-between,
+.number-and {
+  width: 100px;
+  padding: 10px;
+  margin: 0 8px 20px 8px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.number-between:focus,
+.number-and:focus {
+  border-color: #2c3e50;
+}
+
+/* Botão */
+.button-sortition {
+  background: #2c3e50;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button-sortition:hover {
+  background: #34495e;
+}
+
+.button-sortition:active {
+    opacity: 0.9;
+}
+
+.number-sortition-screen {
+  border: 2px solid #2c3e50; /* borda fina */
+  border-radius: 40px;         /* garante círculo */
+  text-align: center;
+  display: none;              /* começa escondido */
+  font-size: 2rem;
+  color: #2c3e50;
+  margin: 5px auto 0;        /* centralizado abaixo do botão */
+  transition: all 0.3s ease;  /* animação suave */
+  cursor: pointer;            /* indica que dá pra interagir */
+}
+
+.number-sortition-screen:hover {
+  transform: scale(1.25);     /* aumenta 15% do tamanho atual */
+  border-color: #2c3e50;    /* cor da borda */
+  background-color: #2c3e50; /* fundo do círculo */
+  color: #fff;               /* cor do texto */
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.button-clear-result, .button-refresh {
+  background: #fff;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  width: 180px;
+  height: 45px;
+}
+
+.button-refresh {
+  width: 140px;
+}
+
+.button-clear-result:hover, .button-refresh:hover {
+  background: #f2f2f2;
+}
+
+.button-clear-result:active, .button-refresh:active {
+  opacity: 0.6;
+}
+
+.button-clear-result,
+.button-refresh {
+  display: none;
+}
